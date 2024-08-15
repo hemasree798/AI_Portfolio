@@ -1,0 +1,579 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<style>
+        /* Transparent overlay styling */
+		a h3 strong{
+            text-decoration: none; /* Remove underline from the link */
+            color: #000; /* Initial text color */
+            transition: color 0.3s ease; /* Smooth color transition on hover */
+        }
+
+        a h3 strong:hover {
+            color: #ff6347; /* Change to desired hover color */
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(35, 32, 32, 0.5); /* Semi-transparent background */
+            display: none; /* Hidden by default */
+            justify-content: flex-start; /* Align to the top of the page */
+            align-items: center;
+            z-index: 1000;
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        /* Content within overlay */
+        .overlay-content {
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(35, 32, 32, 0.5); /* Slightly darker background */
+            border-radius: 10px;
+            margin-top: 10px; /* Position slightly below the top */
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Close button styling */
+        .close-button {
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+    </style>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="images/photo1.jpeg" alt="" /></a>
+					<h1><strong>I am Hemasree Krishna Kumar</strong>,a Machine Learning Engineer with a Post Graduate Certificate in Applied AI and ML. Specializing in TensorFlow, ML and DL algorithms, data analysis, and NLP techniques, I am passionate about transforming complex data into actionable insights and innovative solutions.<br />
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2><strong>Artificial Intelligence for Business Decisions<strong><br /></h2>
+						</header>
+						<p>In the course on Artificial Intelligence for Business Decision Making, led by Professor Glaucia Melo Dos Santos Artifacts, our agile team—comprising Arcadio Fernandez, Jency Shijin, and myself—designed and prototyped AI & ML applications across six sprints, each focused on a new dataset each sprint. We conducted exploratory data analysis (EDA) to extract insights that support strategic, tactical, and operational business decisions, implemented solutions all while navigating tight time constraints to deliver impactful, data-driven solutions that enhance decision-making processes.</p>
+					</section>
+
+				<!-- Two -->
+					<section id="two">
+						<h2>Recent Work</h2>
+						<div class="row">
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/thumbs/sprint_1_thumb.jpg" class="image fit thumb"><img src="images/thumbs/sprint_1_thumb.jpg" alt="" /></a>
+								<a href="https://github.com/hemasree798/US_Accident_Severity_Prediction"><h3><strong>US Accident Severity Prediction</strong></h3></a>
+								<p>The project "US Traffic Accident Severity Prediction" aims to develop a predictive model for assessing the severity of traffic accidents across the U.S. from 2016 to 2023. The dataset includes approximately 7.7 million accident records from 49 states, highlighting the critical need for effective accident severity modeling to understand contributing factors and devise preventive strategies. The project also provides insights into the factors influencing insurance premium costs, which vary significantly by state due to differences in state laws, uninsured driver rates, and economic conditions. The U.S. Department of Transportation estimates the annual economic cost of crashes at $340 billion, emphasizing the importance of improving safety measures and reducing costs.</p>
+								<ul class="actions">
+									<li><a href="https://hemasree798.github.io/US_Accident_Severity_Prediction/Group_4_Sprint_1_Development.html" class="button">View Project</a></li>
+									<li><a href="#" class="button" onclick="openOverlay('overlay1')">Key Contributions</a></li>
+								</ul>
+								<div id="overlay1" class="overlay">
+									<div class="overlay-content">
+										<h3 style="color:white">Here are my key contributions made to the project:</h3>
+										<ul>
+											<p>My contribution involved model training and UI design, addressing class imbalance by applying class weights to enhance model performance.</p>
+										</ul>
+										<button class="close-button" onclick="closeOverlay('overlay1')">Close</button>
+									</div>
+								</div>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/thumbs/sprint_2_thumb.webp" class="image fit thumb"><img src="images/thumbs/sprint_2_thumb.webp" alt="" /></a>
+								<a href="https://github.com/hemasree798/ML-driven-customer-segmentation"><h3><strong>ML Driven Customer Segmentation for Brazilian E-Commerce</strong></h3></a>
+								<p>In this project, we leveraged a comprehensive dataset from the Brazilian e-commerce platform, Olist Store, which includes 100,000 orders from 2016 to 2018 across various marketplaces. The dataset provides a wealth of information, such as order status, pricing, payment methods, freight performance, customer locations, product attributes, and customer reviews. Our goal was to apply machine learning techniques to perform customer segmentation, a crucial aspect of marketing and business strategy. By analyzing these diverse data dimensions, we aimed to gain practical experience in data analysis and uncover actionable insights.</p>
+								<ul class="actions">
+									<li><a href="https://hemasree798.github.io/ML-driven-customer-segmentation/Group_4_Sprint_2_v3.html" class="button">View Project</a></li>
+									<li><a href="#" class="button" onclick="openOverlay('overlay2')">Key Contributions</a></li>
+								</ul>
+								<div id="overlay2" class="overlay">
+									<div class="overlay-content">
+										<h3 style="color:white">Here are my key contributions made to the project:</h3>
+										<ul>
+											<p>My contributions focused on training the model for customer segmentation using the K-means clustering algorithm. I employed the Distortion Score Elbow method to determine the optimal number of clusters (K), which resulted in valuable insights into customer behaviors, including RFM (Recency, Frequency, Monetary) analysis and purchase patterns.</p>
+										</ul>
+										<button class="close-button" onclick="closeOverlay('overlay2')">Close</button>
+									</div>
+								</div>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/thumbs/sprint_3_thumb.jpg" class="image fit thumb"><img src="images/thumbs/sprint_3_thumb.jpg" alt="" /></a>
+								<a href="https://github.com/hemasree798/Crop_Yield_Prediction"><h3><strong>Crop Yields: Advanced Analytics and Machine Learning Approaches</strong></h3></a>
+								<p>The Crop Yield Prediction project focuses on forecasting the yield of various crops by analyzing environmental and agricultural factors. This initiative is essential for agricultural planning, resource allocation, and ensuring food security. By providing accurate yield predictions, the project aids farmers and policymakers in making informed decisions about crop management, irrigation, and pest control strategies. Utilizing advanced machine learning techniques, the project identifies key insights into environmental influences and agricultural productivity.</p>
+								<ul class="actions">
+									<li><a href="https://hemasree798.github.io/Crop_Yield_Prediction/Group_4_Sprint_3_Development_v3.html" class="button">View Project</a></li>
+									<li><a href="#" class="button" onclick="openOverlay('overlay3')">Key Contributions</a></li>
+								</ul>
+								<div id="overlay3" class="overlay">
+									<div class="overlay-content">
+										<h3 style="color:white">Here are my key contributions made to the project:</h3>
+										<ul>
+											<p>My contributions included integrating datasets on pesticides, yield, and temperature, performing data preprocessing to handle missing values, and exploring the datasets to identify relationships between features, countries with the highest yields, and correlations.</p>
+										</ul>
+										<button class="close-button" onclick="closeOverlay('overlay3')">Close</button>
+									</div>
+								</div>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/thumbs/sprint_4_thumb.webp" class="image fit thumb"><img src="images/thumbs/sprint_4_thumb.webp" alt="" /></a>
+								<a href="https://github.com/hemasree798/Customer_Attrition_Loblaws"><h3><strong>Machine Learning Solutions for Customer Churn Prediction at Loblaws</strong></h3></a>
+								<p>The Loblaws Digital project aims to tackle customer churn by building a predictive model that identifies customers at risk of leaving the company. By analyzing various customer-related variables, the project seeks to understand the factors contributing to attrition. The insights gained from this model will enable Loblaws Digital to implement targeted retention strategies, thereby enhancing customer loyalty and reducing churn rates. Additionally, a thorough exploratory data analysis will uncover patterns and trends in customer behavior, providing valuable insights that can inform future decision-making and business strategies. This project is crucial for proactive customer management and ensuring long-term customer engagement.</p>
+								<ul class="actions">
+									<li><a href="https://hemasree798.github.io/Customer_Attrition_Loblaws/Group_4_Sprint_4_Development_v2.html" class="button">View Project</a></li>
+									<li><a href="#" class="button" onclick="openOverlay('overlay4')">Key Contributions</a></li>
+								</ul>
+								<div id="overlay4" class="overlay">
+									<div class="overlay-content">
+										<h3 style="color:white">Here are my key contributions made to the project:</h3>
+										<ul>
+											<p>One of my contributions was to train different models to forecast customer attrition, including logistic regression, decision trees, and random forests. To find the best model, I compared how well each performed. To help users interact with the predictive model, I also created a user interface with Streamlit.</p>
+										</ul>
+										<button class="close-button" onclick="closeOverlay('overlay4')">Close</button>
+									</div>
+								</div>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/thumbs/sprint_5_thumb.png" class="image fit thumb"><img src="images/thumbs/sprint_5_thumb.png" alt="" /></a>
+								<a href="https://github.com/hemasree798/User_Interest_Profiling" class="hover-link"><h3><strong>Interest Profiling based on TikTok reviews</strong></h3></a>
+								<p>The project aims to develop a system for profiling TikTok users by analyzing their app review texts to categorize them into interest groups like Entertainment Enthusiasts and Educational Seekers, ultimately enhancing personalized content recommendations and user engagement. Initially, the project faced challenges with feature extraction using TF-IDF, which lacked deep contextual understanding, and ineffective labeling through clustering and manual methods. Moving forward, the plan is to implement zero-shot classification with pre-trained models for more accurate user interest annotations and to utilize BERT embeddings for richer feature extraction, thereby improving the overall profiling accuracy and effectiveness.</p>
+								<ul class="actions">
+									<li><a href="https://hemasree798.github.io/User_Interest_Profiling/Group_4_Sprint_5_Development_v5.html" class="button">View Project</a></li>
+									<li><a href="#" class="button" onclick="openOverlay('overlay5')">Key Contributions</a></li>
+								</ul>
+								<div id="overlay5" class="overlay">
+									<div class="overlay-content">
+										<h3 style="color:white">Here are my key contributions made to the project:</h3>
+										<ul>
+											<p>I contributed to the project by integrating data sources and performing essential preprocessing to improve dataset quality. I conducted exploratory analysis using word clouds to identify common themes in app reviews and performed sentiment analysis to assess user emotions and satisfaction. These efforts provided valuable insights into TikTok user preferences and set the stage for further modeling and analysis.</p>
+										</ul>
+										<button class="close-button" onclick="closeOverlay('overlay5')">Close</button>
+									</div>
+								</div>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/thumbs/sprint_6_thumb.jpg" class="image fit thumb"><img src="images/thumbs/sprint_6_thumb.jpg" alt="" /></a>
+								<a href="https://github.com/hemasree798/Good_Life_Predictive_Analytics"><h3><strong>Data-Driven Insights: Understanding Class Attendance and Gym Equipment Usage at GoodLife</strong></h3></a>
+								<p>The project uses optimization techniques and predictive modeling to maximize the use of gym memberships and fitness classes at GoodLife Fitness. The objective of fitness class attendance forecasting is to dynamically modify class availability to improve student happiness and attendance. The project aims to forecast crowd levels for gym equipment based on past data as well as extra variables like weather and vacations, enabling improved crowd control and facility use.</p>
+								<ul class="actions">
+									<li><a href="https://hemasree798.github.io/Good_Life_Predictive_Analytics/Group_4_Sprint_6_Development_v3.html" class="button">View Project</a></li>
+									<li><a href="#" class="button" onclick="openOverlay('overlay6')">Key Contributions</a></li>
+								</ul>
+								<div id="overlay6" class="overlay">
+									<div class="overlay-content">
+										<h3 style="color:white">Here are my key contributions made to the project:</h3>
+										<ul>
+											<p>Using methods like the chi-square test, correlation matrix, tree-based feature importance, and variance inflation factor, I contributed to the preparation of the data and the feature importance analysis.</p>
+										</ul>
+										<button class="close-button" onclick="closeOverlay('overlay6')">Close</button>
+									</div>
+								</div>
+							</article>
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section id="three">
+						<h2>Get In Touch</h2>
+						<p>I'm glad you're interested in reaching out! Whether you have questions, feedback, or just want to connect, I'm here to help.</p>
+						<div class="row">
+							<div class="col-4 col-12-small">
+								<ul class="labeled-icons">
+									<li>
+										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
+										200 Shakepeare Dr<br />
+										Waterloo, ON N2L6C1<br />
+										Canada
+									</li>
+									<li>
+										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
+										(382)-885-2479
+									</li>
+									<li>
+										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+										<a href="mailto:hemasree798@gmail.com">hemasree798@gmail.com</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+				<!-- Four -->
+				<!--
+					<section id="four">
+						<h2>Elements</h2>
+
+						<section>
+							<h4>Text</h4>
+							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+							<hr />
+							<header>
+								<h4>Heading with a Subtitle</h4>
+								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+							</header>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+							<header>
+								<h5>Heading with a Subtitle</h5>
+								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+							</header>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+							<hr />
+							<h2>Heading Level 2</h2>
+							<h3>Heading Level 3</h3>
+							<h4>Heading Level 4</h4>
+							<h5>Heading Level 5</h5>
+							<h6>Heading Level 6</h6>
+							<hr />
+							<h5>Blockquote</h5>
+							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+							<h5>Preformatted</h5>
+							<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+print 'Iteration ' + i;
+deck.shuffle();
+i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+						</section>
+
+						<section>
+							<h4>Lists</h4>
+							<div class="row">
+								<div class="col-6 col-12-xsmall">
+									<h5>Unordered</h5>
+									<ul>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Sagittis adipiscing lorem eleifend.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ul>
+									<h5>Alternate</h5>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Sagittis adipiscing lorem eleifend.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<h5>Ordered</h5>
+									<ol>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Etiam vel felis at lorem sed viverra.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Etiam vel felis at lorem sed viverra.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ol>
+									<h5>Icons</h5>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+										<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+										<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
+									</ul>
+								</div>
+							</div>
+							<h5>Actions</h5>
+							<ul class="actions">
+								<li><a href="#" class="button primary">Default</a></li>
+								<li><a href="#" class="button">Default</a></li>
+							</ul>
+							<ul class="actions small">
+								<li><a href="#" class="button primary small">Small</a></li>
+								<li><a href="#" class="button small">Small</a></li>
+							</ul>
+							<div class="row">
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary small">Small</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary fit">Default</a></li>
+										<li><a href="#" class="button fit">Default</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary small fit">Small</a></li>
+										<li><a href="#" class="button small fit">Small</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<section>
+							<h4>Table</h4>
+							<h5>Default</h5>
+							<div class="table-wrapper">
+								<table>
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Item One</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Two</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Three</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Four</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+
+							<h5>Alternate</h5>
+							<div class="table-wrapper">
+								<table class="alt">
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Item One</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Two</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Three</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Four</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</section>
+
+						<section>
+							<h4>Buttons</h4>
+							<ul class="actions">
+								<li><a href="#" class="button primary">Primary</a></li>
+								<li><a href="#" class="button">Default</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="#" class="button large">Large</a></li>
+								<li><a href="#" class="button">Default</a></li>
+								<li><a href="#" class="button small">Small</a></li>
+							</ul>
+							<ul class="actions fit">
+								<li><a href="#" class="button primary fit">Fit</a></li>
+								<li><a href="#" class="button fit">Fit</a></li>
+							</ul>
+							<ul class="actions fit small">
+								<li><a href="#" class="button primary fit small">Fit + Small</a></li>
+								<li><a href="#" class="button fit small">Fit + Small</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+								<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+							</ul>
+							<ul class="actions">
+								<li><span class="button primary disabled">Primary</span></li>
+								<li><span class="button disabled">Default</span></li>
+							</ul>
+						</section>
+
+						<section>
+							<h4>Form</h4>
+							<form method="post" action="#">
+								<div class="row gtr-uniform gtr-50">
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+									</div>
+									<div class="col-12">
+										<select name="demo-category" id="demo-category">
+											<option value="">- Category -</option>
+											<option value="1">Manufacturing</option>
+											<option value="1">Shipping</option>
+											<option value="1">Administration</option>
+											<option value="1">Human Resources</option>
+										</select>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+										<label for="demo-priority-low">Low Priority</label>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="demo-priority-normal" name="demo-priority">
+										<label for="demo-priority-normal">Normal Priority</label>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="demo-priority-high" name="demo-priority">
+										<label for="demo-priority-high">High Priority</label>
+									</div>
+									<div class="col-6 col-12-small">
+										<input type="checkbox" id="demo-copy" name="demo-copy">
+										<label for="demo-copy">Email me a copy of this message</label>
+									</div>
+									<div class="col-6 col-12-small">
+										<input type="checkbox" id="demo-human" name="demo-human" checked>
+										<label for="demo-human">I am a human and not a robot</label>
+									</div>
+									<div class="col-12">
+										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+
+						<section>
+							<h4>Image</h4>
+							<h5>Fit</h5>
+							<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+									<div class="col-12"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
+								</div>
+							</div>
+							<h5>Left &amp; Right</h5>
+							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+						</section>
+
+					</section>
+				-->
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/hemasree-krishna-kumar/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/hemasree798" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="mailto:hemasree798@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				function openOverlay(overlayId) {
+            		document.getElementById(overlayId).style.display = 'flex';
+        		}
+
+				function closeOverlay(overlayId) {
+					document.getElementById(overlayId).style.display = 'none';
+				}
+			</script>
+
+	</body>
+</html>
